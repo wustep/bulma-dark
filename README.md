@@ -2,9 +2,7 @@
 
 ![Safari screenshot](.github/safari-screenshot.png)
 
-A Bulma extension that adds support for the `prefers-color-scheme: dark` media query
-
-
+A [Bulma](https://bulma.io) extension that adds dark mode support via either the `prefers-color-scheme: dark` media query or a root class change.
 
 ## Installation
 
