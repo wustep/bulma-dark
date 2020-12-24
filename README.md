@@ -38,7 +38,7 @@ or
 
 Add `bulma-dark-root.sass` instead for a dark theme that applies when the `<html>` tag has `class: dark-mode`.
 
-### bulma-dark-root-and-prefers
+### bulma-prefers-dark-root
 
 Add `bulma-dark-and-prefers.sass` instead for a dark theme that applies when the `<html>` tag has `class: dark-mode` OR (`prefers-color-scheme` is set to `dark` AND the `<html>` tag does NOT have `class: light-mode`).
 
