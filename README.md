@@ -42,6 +42,8 @@ Add `bulma-dark-root.sass` instead for a dark theme that applies when the `<html
 
 Add `bulma-dark-and-prefers.sass` instead for a dark theme that applies when the `<html>` tag has `class: dark-mode` OR (`prefers-color-scheme` is set to `dark` AND the `<html>` tag does NOT have `class: light-mode`).
 
+Note: This doubles the CSS payload (172kb) since CSS doesn't support efficient nesting :'(.
+
 #### If using pure CSS without SASS
 
 Note that the `/build/` and `/css` directories use the first: bulma-prefers-dark method! To change this, you can change the `@import "../bulma-prefers-dark.sass"` statement in `/build/bulma-prefers-dark.sass` and then run `npm build` to re-compile.
