@@ -1,38 +1,42 @@
-# bulma-prefers-dark
+# @wustep/bulma-dark
 
 ![Safari screenshot](.github/safari-screenshot.png)
 
 A Bulma extension that adds support for the `prefers-color-scheme: dark` media query
 
-[![npm](https://img.shields.io/npm/v/bulma-prefers-dark.svg)](https://www.npmjs.com/package/bulma-prefers-dark)
-[![npm](https://img.shields.io/npm/dm/bulma-prefers-dark.svg)](https://www.npmjs.com/package/bulma-prefers-dark)
+
 
 ## Installation
 
 ```
-npm install bulma-prefers-dark
+npm install wustep/bulma-dark
 ... Or ...
-yarn add bulma-prefers-dark
+yarn add bulma-dark
 ```
 
-## Usage
+## Usage 
 
-This extension works as-is in combination with Bulma by adding an alternative dark theme via the `@media (prefers-color-scheme: dark)` [media query](https://caniuse.com/#search=prefers-color-scheme).
+This extension works as-is in combination with Bulma! There are two ways to use this.
 
-Include it in your SaSS pipeline after you've included Bulma and you're good to go:
+### bulma-prefers-dark
+
+Add `bulma-prefers-dark.sass` for themes that apply when the user has their `prefers-color-scheme` set to true.
 
 ```scss
 @import "../../node_modules/bulma/bulma.sass";
 @import "../../bulma-prefers-dark/bulma-prefers-dark.sass";
 ```
 
-Alternatively include it in your HTML via unpkg:
+or 
 
-```html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/bulma-prefers-dark" />
+```
+@import '~bulma';
+@import '~bulma-prefers-dark/bulma-prefers-dark.sass';
 ```
 
-<!-- TODO: Add example sites -->
+### bulma-dark
+
+Add `bulma-dark.sass` for themes that apply when the `<html>` tag has `class: dark-mode`.
 
 ## Copyright & License
 
