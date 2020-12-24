@@ -2,7 +2,9 @@
 
 ![Safari screenshot](.github/safari-screenshot.png)
 
-A [Bulma](https://bulma.io) extension that adds dark mode support via either the `prefers-color-scheme: dark` media query or a root class change.
+A [Bulma](https://bulma.io) extension that adds dark mode support via either the `prefers-color-scheme: dark` media query or a root class change. This is a fork of [`bulma-prefers-dark`](https://github.com/jloh/bulma-prefers-dark) that adds alternative sass files to import that support using classes as opposed to only the `prefers-color-scheme` tag.
+
+Dark mode should be controlled, not assumed. This module lets the user control dark mode, optionally using their browser/OS preset as a default. [See this article for more details](https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/). 
 
 ## Installation
 
@@ -18,7 +20,7 @@ This extension works as-is in combination with Bulma! There are two ways to use 
 
 ### bulma-prefers-dark
 
-Add `bulma-prefers-dark.sass` for themes that apply when the user has their `prefers-color-scheme` set to true.
+Add `bulma-prefers-dark.sass` for a dark themes that applies when the user has their `prefers-color-scheme` set to `dark`.
 
 ```scss
 @import "../../node_modules/bulma/bulma.sass";
@@ -32,10 +34,14 @@ or
 @import '~bulma-prefers-dark/bulma-prefers-dark.sass';
 ```
 
-### bulma-dark
+### bulma-dark-root
 
-Add `bulma-dark.sass` for themes that apply when the `<html>` tag has `class: dark-mode`.
+Add `bulma-dark-root.sass` instead for a dark theme that applies when the `<html>` tag has `class: dark-mode`.
+
+### bulma-dark-root-and-prefers
+
+Add `bulma-dark-and-prefers.sass` instead for a dark theme that applies when the `<html>` tag has `class: dark-mode` OR (`prefers-color-scheme` is set to `dark` AND the `<html>` tag does NOT have `class: light-mode`).
 
 ## Copyright & License
 
-Code copyright 2019 James Loh. Code released under the [MIT license](LICENSE).
+Original Code copyright 2019 James Loh. Code released under the [MIT license](LICENSE).
